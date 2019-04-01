@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book My Show | Assignment 1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    
+  </head>
+  <body>
+    <h1 class="text-center">BookMyShow - Assignment - 1</h1>
+    <div class="container mt-4">
+      <form>
+        <div class="form-group">
+          <label for="number">Enter a number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="txtNumber"
+            placeholder="enter a number"
+            onkeypress="return isNumberKey(event)"
+          />
+        </div>
+        <div
+          class="alert alert-danger"
+          role="alert"
+          id="errorMsg"
+          style="display:none"
+        ></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <h4 class="mt-4">Unique Data in the array: <span class="btn btn-secondary" id="btnResetArray">Reset Array</span> </h4>
+      <ul class="list-group list-group-flush" id="divList"></ul>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
